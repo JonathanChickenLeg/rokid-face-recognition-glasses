@@ -2,7 +2,11 @@
   "pages": [
     "pages/home/home",
     "pages/capturing/capturing",
-    "pages/processing/processing"
+    "pages/capturing/processing",
+    "pages/capturing/idle",
+    "pages/recognising/can_recognise",
+    "pages/recognising/cannot_recognise",
+    "pages/recognising/auto_recognise"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",
