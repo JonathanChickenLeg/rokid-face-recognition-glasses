@@ -1,10 +1,6 @@
 {
   "pages": [
-    "pages/overlay/overlay",
-    "pages/home/home",
-    "pages/enrollment/enrollment",
-    "pages/detail/detail",
-    "pages/settings/settings"
+    "pages/home/home"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",
