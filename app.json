@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/capturing/capturing",
-    "pages/processing/processing"
+    "pages/processing/processing",
+    "pages/settings/settings"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",
