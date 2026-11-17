@@ -1,21 +1,20 @@
 <script type="application/json" def>
-{
-  "navigationBarTitleText": "Idle",
-  "disableScroll": true
-}
+  {
+    "navigationBarTitleText": "Idle",
+    "disableScroll": true
+  }
 </script>
 
 <script setup>
-export default {
-  startRecognition() {}
-};
+  export default {
+    startRecognition() {}
+  };
 </script>
 
 <page>
   <view class="container">
     <view class="content">
-      <text class="idle">Idle</text>
-
+      <text class="capturing">Idle</text>
       <view class="border">
         <view class="circle"></view>
       </view>
@@ -24,18 +23,6 @@ export default {
 </page>
 
 <style>
-  page {
-    background-color: #000000;
-  }
-
-  .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .content {
     display: flex;
     flex-direction: column;
@@ -43,21 +30,20 @@ export default {
     justify-content: center;
   }
 
-  .idle {
+  .capturing {
     width: 90%;
     font-size: 12px;
     font-weight: bold;
     text-align: left;
-    color: #40ff5e;
     margin-bottom: 5px;
   }
 
   .border {
     width: 90%;
     height: 270px;
-    outline: 1px solid #40ff5e;
+    outline: 1px solid 	#40ff5e;
     align-items: center;
-    justify-content: center;
+    justify-content: center
   }
 
   .circle {

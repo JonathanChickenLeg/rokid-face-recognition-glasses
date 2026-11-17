@@ -7,6 +7,8 @@
 
 <script setup>
 export default {
+  startRecognition() {},
+
   data: {
     dots: ""
   },
@@ -62,8 +64,6 @@ export default {
 
       <view class="border">
         <view class="circle"></view>
-        <text class="message">Please look at the camera</text>
-        <text class="instruction">Keep your face within the frame</text>
       </view>
 
     </view>
@@ -116,17 +116,5 @@ export default {
     border-radius: 50%;
     background-color: transparent;
     margin-bottom: 15px;
-  }
-
-  .message {
-    font-size: 12px;
-    font-weight: bold;
-    color: #40ff5e;
-    margin-bottom: 8px;
-  }
-
-  .instruction {
-    font-size: 10px;
-    color: rgba(64, 255, 94, 0.72);
   }
 </style>
