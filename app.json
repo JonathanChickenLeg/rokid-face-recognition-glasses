@@ -6,7 +6,9 @@
     "pages/capturing/idle",
     "pages/recognising/can_recognise",
     "pages/recognising/cannot_recognise",
-    "pages/recognising/auto_recognise"
+    "pages/recognising/auto_recognise",
+    "pages/processing/processing",
+    "pages/settings/settings"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",
