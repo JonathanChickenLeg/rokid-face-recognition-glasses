@@ -5,6 +5,12 @@
 }
 </script>
 
+<script setup>
+export default {
+  startRecognition() {}
+};
+</script>
+
 <page>
   <view class="container">
     <view class="content">
