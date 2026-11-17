@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/capturing/capturing"
+    "pages/capturing/capturing",
+    "pages/processing/processing"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",
