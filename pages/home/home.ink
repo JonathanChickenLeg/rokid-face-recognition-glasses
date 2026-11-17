@@ -18,7 +18,7 @@ export default {
       <text class="title">RecognizeMe</text>
 
       <!-- Glasses Icon -->
-      <text class="icon">♧</text>
+      <text class="icon">⚯</text>
 
       <!-- App Title -->
       <text class="title">Name Assistant</text>
