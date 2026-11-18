@@ -7,7 +7,27 @@
 
 <script setup>
   export default {
-    startRecognition() {}
+    onKeyUp(event) {
+      if (event.code === "GlobalHook") {
+        event.preventDefault();
+        this.startCapturing();
+      }
+    },
+
+    startCapturing() {
+      if (this.navigating) return;
+
+      this.navigating = true;
+
+      wx.redirectTo({
+        url: "/pages/capturing/capturing",
+
+        fail: (error) => {
+          this.navigating = false;
+          console.error("Navigation failed:", error);
+        }
+      });
+    },
   };
 </script>
 

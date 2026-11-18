@@ -7,10 +7,16 @@
 
 <script setup>
   export default {
-    startRecognition() {},
 
     data: {
       dots: ""
+    },
+
+    onKeyUp(event) {
+      if (event.code === "GlobalHook") {
+        event.preventDefault();
+        this.stopRecognition();
+      }
     },
 
     onShow() {

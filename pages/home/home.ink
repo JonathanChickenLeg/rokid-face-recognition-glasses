@@ -6,7 +6,37 @@
 
 <script setup>
 export default {
-  startRecognition() {}
+  onKeyUp(event) {
+  if (event.code === "GlobalHook") {
+    event.preventDefault();
+    this.startApp();
+    }
+  },
+  startApp() {
+    if (this.navigating) return;
+
+    this.navigating = true;
+
+    const settings = wx.getStorageSync(
+      "nameAssistantSettings"
+    );
+
+    const autoRecognition =
+      settings && settings.autoRecognition === true;
+
+    const destination = autoRecognition
+      ? "/pages/recognising/auto_recognising"
+      : "/pages/capturing/idle";
+
+    wx.redirectTo({
+      url: destination,
+
+      fail: (error) => {
+        this.navigating = false;
+        console.error("Navigation failed:", error);
+      }
+    });
+  },
 };
 </script>
 
@@ -24,7 +54,7 @@ export default {
       <text class="title">Name Assistant</text>
 
       <!-- Start Button -->
-      <view class="start-btn" bindtap="startRecognition">
+      <view class="start-btn" bindtap="startApp">
         <text class="btn-text">Start Recognition</text>
       </view>
 
